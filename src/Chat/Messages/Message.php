@@ -26,7 +26,7 @@ class Message implements \JsonSerializable
 
     public function getContent(): mixed
     {
-        return $this->content;
+        return $this->content ?? '';
     }
 
     public function setUsage(Usage $usage): static
